@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>作业</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+
+	    table{
+	    	margin-top: 15px;
+	    }
+		table,table tr th, table tr td { border:1px solid black; }
+        table { min-height: 25px; line-height: 25px; text-align: center; border-collapse: collapse;} 
+		p{
+			color: red;
+		}
+	</style>
+</head>
+<body>
+	<div id="task1">
+		<p>1.要求：输入数据点击添加按钮可以添加行，可以点击删除按钮删除对应行,以原生JS完成</p>
+		姓名：<input type="text">邮箱：<input type="text">年龄：<input type="text"> <button type="button">添加</button>
+
+		<table>
+			<thead>
+				<th style="width: 100px">姓名</th>
+				<th style="width: 300px">邮箱</th>
+				<th style="width: 150px">年龄</th>
+				<th style="width: 150px">操作</th>
+			</thead>
+			<tbody>
+				<td>张三</td>
+				<td>120154689@qq.comn</td>
+				<td>18</td>
+				<td><button type="button">删除</button></td>
+			</tbody>
+		</table>
+	</div>
+    <div id="task2">
+    	<p>2.要求：默认以数组的第一个元素初始化省份和城市标签，选择省份切换城市元素的内容想，以原生JS完成</p>
+    	省份:<select style="margin-right: 20px;">
+    	     <option>湖北</option>
+    	     <option>湖南</option>	
+    	     <option>江西</option>	
+    	     </select>
+
+    	城市:<select>
+    		 <option>武汉市</option>
+    	     <option>孝感市</option>   		  	
+    	    </select>     
+    </div>
+
+    <script type="text/javascript">
+    	var provice =[{
+    		name:'湖北省',
+    		city:["武汉市","孝感市"]
+    	},{
+    		name:"湖南省",
+    		city:["长沙市","常德市"]
+    	},{
+    		name:'江西省',
+    		city:["九江市","南昌市"]
+    	}]
+    </script>
+</body>
+</html>
